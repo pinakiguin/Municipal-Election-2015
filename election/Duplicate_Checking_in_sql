@@ -1,0 +1,11 @@
+To Checking the duplicate According To Account Number:
+
+SELECT COUNT(*) as Duplicates,`Account Number` FROM `19200700114004` GROUP BY `Account Number` HAVING COUNT(*)>1;
+
+To Checking the duplicate According To Applicants name and fathers name:
+SELECT COUNT(*) as Duplicates,`Applicant's Name`,`Father's Name`FROM `19200700114004`
+ GROUP BY `Applicant's Name`,`Father's Name` HAVING COUNT(*)>1;
+
+
+To Checking the duplicate According To ApplicantID:
+SELECT COUNT(*) as Duplicates,`Application Id`FROM `19200700114004` GROUP BY `Application Id`HAVING COUNT(*)>1;
